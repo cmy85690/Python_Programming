@@ -55,12 +55,25 @@
 # print(f"head={head}\ntail={tail}")
 
 
-def solution(letter):
-    morse = { 
-    '.-':'a','-...':'b','-.-.':'c','-..':'d','.':'e','..-.':'f',
-    '--.':'g','....':'h','..':'i','.---':'j','-.-':'k','.-..':'l',
-    '--':'m','-.':'n','---':'o','.--.':'p','--.-':'q','.-.':'r',
-    '...':'s','-':'t','..-':'u','...-':'v','.--':'w','-..-':'x',
-    '-.--':'y','--..':'z'
-    }
-    return "".join([morse[i] for i in letter.split()])
+# def solution(letter):
+#     morse = { 
+#     '.-':'a','-...':'b','-.-.':'c','-..':'d','.':'e','..-.':'f',
+#     '--.':'g','....':'h','..':'i','.---':'j','-.-':'k','.-..':'l',
+#     '--':'m','-.':'n','---':'o','.--.':'p','--.-':'q','.-.':'r',
+#     '...':'s','-':'t','..-':'u','...-':'v','.--':'w','-..-':'x',
+#     '-.--':'y','--..':'z'
+#     }
+#     return "".join([morse[i] for i in letter.split()])
+
+
+import time
+a = int(input())
+start=time.time()
+for i in range(a,0,-1):
+    
+	print(i)
+	time.sleep(1)
+ 
+end = time.time()
+print("발사")
+print(end-start)
